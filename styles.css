@@ -10,6 +10,13 @@ h1 {
   text-shadow: 3px 0 #da0463;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
 footer {
   color: #dbedf3;
   font-family: sans-serif;
