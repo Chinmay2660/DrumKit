@@ -2,24 +2,30 @@
 var numberOfButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfButtons; i++) {
+  //Looping through the buttons
   document.querySelectorAll("button")[i].addEventListener("click", function () {
-    var buttonInnerHTML = this.innerHTML;
-    makeSound(buttonInnerHTML);
-    buttonAnimation(buttonInnerHTML);
+    //Adding event listener to each button
+    var buttonInnerHTML = this.innerHTML; //Getting the innerHTML of the button
+    makeSound(buttonInnerHTML); //Calling the function to make the sound
+    buttonAnimation(buttonInnerHTML); //Calling the function to animate the button
   });
 }
 
 //Detecting Key Press
 document.addEventListener("keydown", function (event) {
+  //Adding event listener to the document
   //addEventListener is a Higher Order Function
-  makeSound(event.key);
-  buttonAnimation(event.key);
+  makeSound(event.key); //Calling the function to make the sound
+  buttonAnimation(event.key); //Calling the function to animate the button
 });
 
 function makeSound(key) {
-  switch (key) {
+  //Function to make the sound
+  switch (
+    key //Switch statement to determine the sound
+  ) {
     case "w":
-      var tom1 = new Audio("sounds/tom-1.mp3");
+      var tom1 = new Audio("sounds/tom-1.mp3"); //Creating a new audio object
       tom1.play();
       break;
 
@@ -59,11 +65,13 @@ function makeSound(key) {
 }
 
 function buttonAnimation(currentKey) {
-  var activeButton = document.querySelector("." + currentKey);
-  activeButton.classList.add("pressed");
+  //Function to animate the button
+  var activeButton = document.querySelector("." + currentKey); //Selecting the button with the current key
+  activeButton.classList.add("pressed"); //Adding the pressed class to the button
   setTimeout(function () {
-    activeButton.classList.remove("pressed");
-  }, 100);
+    //Setting a timeout to remove the pressed class
+    activeButton.classList.remove("pressed"); //Removing the pressed class
+  }, 100); //Setting the timeout to 100ms
 }
 
 // var audio = new Audio('sounds/crash.mp3');
