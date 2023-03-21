@@ -1,6 +1,6 @@
 # DrumKit
 
-DrumKit is a web application that allows users to play drum sounds by clicking on images of drums or using the corresponding keyboard keys. The application is built with HTML, CSS, and JavaScript and includes eight different drum sounds.
+DrumKit is a web application that allows users to play drum sounds by clicking on images of drums or using the corresponding keyboard keys. The application is built with HTML, CSS, and JavaScript and includes seven different drum sounds.
 
 ## Demo
 
@@ -9,7 +9,7 @@ You can try out the DrumKit application live at [DrumKit](https://chinmay2660.gi
 ## Features
 
 - Simple and intuitive user interface
-- Eight different drum sounds to choose from
+- Seven different drum sounds to choose from
 - Users can play drums by clicking on images or using the keyboard keys
 
 ## Getting Started
