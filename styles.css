@@ -85,3 +85,9 @@ footer {
   margin: 10px;
   background-color: white;
 }
+
+footer {
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 2px 0 #da0463;
+}
